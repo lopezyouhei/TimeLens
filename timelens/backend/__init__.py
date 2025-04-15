@@ -1,0 +1,1 @@
+from .app import MODEL_PATH
