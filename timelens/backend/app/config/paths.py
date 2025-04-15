@@ -1,0 +1,1 @@
+MODEL_PATH = "timelens/backend/app/models"

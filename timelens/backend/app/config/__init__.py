@@ -1,0 +1,1 @@
+from .paths import MODEL_PATH
