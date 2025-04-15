@@ -18,6 +18,6 @@ This is a fun project where I wanted to add different image processing functions
 2. Launch the Streamlit app
    ```terminal
    cd timelens/frontend
-   streamlit run app.py
+   streamlit run Home.py
    ```
 3. Enjoy!
