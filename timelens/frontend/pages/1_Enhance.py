@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("TimeLens")
+st.title("Image Enhancer")
 st.write("Upload an image and select a resolution (2x or 4x).")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
