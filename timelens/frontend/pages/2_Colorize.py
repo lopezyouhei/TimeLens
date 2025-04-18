@@ -50,5 +50,5 @@ with col2:
         st.subheader("Original")
         st.image(os.path.join(assets_path, "colorize/race_car.jpg"), use_container_width=True)
     with subcol2:
-        st.subheader("Enhanced 2x")
+        st.subheader("Colorized")
         st.image(os.path.join(assets_path, "colorize/colorized_race_car.png"), use_container_width=True)
