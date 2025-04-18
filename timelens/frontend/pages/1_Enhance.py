@@ -1,12 +1,17 @@
 import streamlit as st
 import requests
+import os
+
+frontend_path = os.path.dirname(os.path.dirname(__file__))
+assets_path = os.path.join(frontend_path, "assets")
 
 st.title("Image Enhancer")
-st.write("Upload an image and select a resolution (2x or 4x).")
 
-col1, col2 = st.columns([2, 1])
+col1, col2 = st.columns([1.3, 1])
 
 with col1:
+    
+    st.write("Upload an image and select a resolution (2x or 4x).")
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
     scale_option = st.radio("Select scale", ["x2", "x4"])
     button = st.button("Enhance Image")
@@ -38,5 +43,13 @@ with col1:
                 print("Failed to enhance image.")
 
 with col2:
-    st.write("Enhance example images:")
-    
+    subcol1, subcol2, subcol3 = st.columns([1, 1, 1])
+    with subcol1:
+        st.subheader("Original")
+        st.image(os.path.join(assets_path, "enhance/dog.jpg"), use_container_width=True)
+    with subcol2:
+        st.subheader("Enhanced 2x")
+        st.image(os.path.join(assets_path, "enhance/enhanced_x2_dog.png"), use_container_width=True)
+    with subcol3:
+        st.subheader("Enhanced 4x")
+        st.image(os.path.join(assets_path, "enhance/enhanced_x4_dog.png"), use_container_width=True)
