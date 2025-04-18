@@ -11,7 +11,6 @@ import torch
 backend_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(backend_path)
 from app import MODEL_PATH
-print(MODEL_PATH)
 
 # lazy load models to avoid loading multiple models into (GPU) memory
 @lru_cache(maxsize=1)
