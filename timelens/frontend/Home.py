@@ -7,3 +7,5 @@ st.set_page_config(
 )
 
 st.title("TimeLens")
+
+st.write("Welcome to TimeLens, your go-to solution for image and video enhancement!")
