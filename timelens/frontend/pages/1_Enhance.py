@@ -17,6 +17,8 @@ with col1:
     button = st.button("Enhance Image")
 
     if button and uploaded_file and scale_option:
+        filename = uploaded_file.name
+        filename = filename.split(".")[0]
         with st.spinner("Enhancing..."):
             files = {
                 "file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)
@@ -37,7 +39,7 @@ with col1:
                 st.download_button(
                     "Download Enhanced Image", 
                     response.content, 
-                    "enhanced_image.png"
+                    f"enhanced_{scale_option}_{filename}.png"
                 )
             else:
                 print("Failed to enhance image.")
