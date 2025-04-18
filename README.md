@@ -21,3 +21,7 @@ This is a fun project where I wanted to add different image processing functions
    streamlit run Home.py
    ```
 3. Enjoy!
+
+## Supported Features
+- Enhancing images
+- Colorizing images
