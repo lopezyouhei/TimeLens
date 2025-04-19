@@ -3,7 +3,7 @@ This is a fun project where I wanted to add different image processing functions
 
 ## Setup
 0. Make sure you have a GPU with the correct drivers installed!
-1. Create a virtual environment with Python 3.10.0 :point_left:
+1. Create a virtual environment with Python 3.10.0 and activate it :point_left:
 2. Run the following command in terminal :point_down:
     ```terminal 
     python timelens/setup.py install
